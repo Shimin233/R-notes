@@ -1,3 +1,18 @@
+## seq()
+`seq(from, to[, by][, length.out][, along.with])`, where\
+by = It is the increment of the given sequence. It is calculated as ((to-from) /(length.out-1))\
+length.out = Decides the total length of the sequence,\
+along.with = Outputs a sequence of the same length as the input vector.\
+I guess that it is possible to have errors if setting `by`, `length.out` and `along.with` improperly.
+
+Also, we can have direct argument passing with seq() function, for instance:\
+```R
+seq_len(5) #outputs 1 2 3 4 5, here the argument must be non-negative integer
+seq.int(2,10) #outputs 2 3 4 5 6 7 8 9 10
+```
+Source: [seq生成序列-f参数_使用seq（）函数在R中生成序列](https://blog.csdn.net/cunchi4221/article/details/107525766)
+
+## set.seed()
 You can set a seed, so that a set of randomly generated data can be re-quoted. 
 Without setting a seed, the randomly generated data can vary from time to time (of course they CAN be the same, as they are random).
 
